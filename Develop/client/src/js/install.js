@@ -6,21 +6,19 @@ let deferredPrompt;
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault()
     deferredPrompt = event;
-    butInstall.classList.toggle('hidden', false);
+    butInstall.toggle('hidden', false);
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
-    const event = deferredPrompt;
-
-    event.prompt();
+   deferredPrompt.prompt();
 
     console.log(deferredPrompt)
-    butInstall.classList.toggle('hidden', true);
+    butInstall.toggle('hidden', true);
 });
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
-    deferredPrompt = null
+    event.preventDefault()
     console.log('App installed sucessfully')
 });

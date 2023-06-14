@@ -25,6 +25,10 @@ The purpose of this project was to update code to create a Progressive Web Appli
 
 Click the link to be taken to the deployed site : https://this-is-jate-a2cd3ac41089.herokuapp.com/
 
+
+## Credits
+https://web.dev/learn/pwa/installation-prompt/#:~:text=Then%2C%20if%20the%20user%20clicks%20on%20your%20customized,context%20to%20encourage%20them%20to%20install%20the%20PWA.
+
 ## Contact Info
 
 - GitHub Repo: [Nephew20](https://github.com/Nephew20?tab=repositories)
